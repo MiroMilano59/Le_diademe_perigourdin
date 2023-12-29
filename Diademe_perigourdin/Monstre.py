@@ -1,8 +1,6 @@
 from random import *
 from Heros import *
 
-diademe = 0 
-
 class Monstre:
     
     def __init__ (self, niveau, nom = "Monstre", pt_vies_monstre = 100):
@@ -22,7 +20,7 @@ class Monstre:
     def utiliser_potion(self):
         aleatoire = randint (0,100)
         if self.niveau == 3 and aleatoire < 25:
-            self.pt_vies_monstre += 10
+            self.pt_vies_monstre += 20
         else:
             pass
 
@@ -33,10 +31,10 @@ class Monstre:
     #         self.pt_vies_monstre in liste_de_monstres :
     #             self.pt_vies_monstre /= 2               
 
-    def perdre_vie(self, degats):
+    def perdre_vie_monstre(self, degats):
         self.pt_vies_monstre = self.pt_vies_monstre - degats
         # self.pt_vies_heros -= 1
         print(f"il reste {self.pt_vies_monstre} vies au {self.nom}")
 
 
-# monstre1 = Monstre(5)
+monstre1 = Monstre(1)
