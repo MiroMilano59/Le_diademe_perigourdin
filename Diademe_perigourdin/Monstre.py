@@ -1,11 +1,10 @@
-from random import *
+from random import randint
 from Heros import *
 
-diademe = 0 
 
 class Monstre:
     
-    def __init__ (self, niveau, nom = "Monstre", pt_vies_monstre = 100):
+    def __init__ (self, niveau, nom = "Monstre", pt_vies_monstre = 20):
         self.niveau = niveau
         self.nom = nom
         self.pt_vies_monstre = pt_vies_monstre
@@ -15,7 +14,6 @@ class Monstre:
             degats_de_lattaque = randint(1,10)
         elif self.niveau == 2:
             degats_de_lattaque = randint(5,13)
-        #print(degats_de_lattaque)
         return degats_de_lattaque
         
 
@@ -25,14 +23,7 @@ class Monstre:
             self.pt_vies_monstre += 10
         else:
             pass
-
-    # def diademe(self):
-    #     hasard = randint(0,100)
-    #     if self.pt_vies_monstre =< 0 and hasard < 10:
-    #         diademe += 1
-    #         self.pt_vies_monstre in liste_de_monstres :
-    #             self.pt_vies_monstre /= 2               
-
+     
     def perdre_vie(self, degats):
         self.pt_vies_monstre = self.pt_vies_monstre - degats
         # self.pt_vies_heros -= 1
@@ -48,4 +39,3 @@ def monstre_du_combat():
     generateur = randint(0,2)
     monstre_du_combat =  liste_de_monstres[generateur]
     return monstre_du_combat
-print (monstre_du_combat())
