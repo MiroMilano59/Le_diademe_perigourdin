@@ -21,10 +21,10 @@ class Monstre:
 
     def utiliser_potion(self):
         aleatoire = randint (0,100)
-        if self.niveau == 3 and aleatoire > 25:
-            attaquer(self)
-        else:
+        if self.niveau == 3 and aleatoire < 25:
             self.pt_vies_monstre += 10
+        else:
+            pass
 
     # def diademe(self):
     #     hasard = randint(0,100)
@@ -39,4 +39,4 @@ class Monstre:
         print(f"il reste {self.pt_vies_monstre} vies au {self.nom}")
 
 
-monstre1 = Monstre(5)
+# monstre1 = Monstre(5)

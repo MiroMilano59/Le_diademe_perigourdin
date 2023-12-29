@@ -22,7 +22,7 @@ class Heros:
         # self.pt_vies_heros -= 1
         print(f"il te reste {self.pt_vies_heros} vies")
 
-    def diademe(self):
+    # def diademe(self):
 
 
     def drop(self):
@@ -32,8 +32,11 @@ class Heros:
             chance_drop = randint(1,30)
             if chance_drop <= 10:
                 chance_drop_item = randint(1, len(liste_equipement))
+                inventaire_hero.append(liste_equipement[chance_drop_item])
+                liste_equipement.remove(liste_equipement[chance_drop_item])
+            else:
+                pass
 
-        elif 
 
 
 

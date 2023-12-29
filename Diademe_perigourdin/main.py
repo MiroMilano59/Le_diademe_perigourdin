@@ -9,7 +9,7 @@ from Heros import *
 
 #print(hero1.__dict__)
 hero1 = Heros("Fred le borgne")
-monstre1 = Monstre(5)
+monstre1 = Monstre(3)
 
 variable = hero1
 while hero1.pt_vies_heros > 0 :
@@ -21,6 +21,6 @@ while hero1.pt_vies_heros > 0 :
     degats_du_heros = variable.attaquer()
     monstre1.perdre_vie(degats_du_heros)
     #print(monstre1.__dict__)
-
+    monstre1.utiliser_potion()
     #hero1.utiliser_potion()
 
