@@ -37,4 +37,13 @@ class Monstre:
         print(f"il reste {self.pt_vies_monstre} vies au {self.nom}")
 
 
-monstre1 = Monstre(1)
+sauvage = Monstre(1, "sauvage")
+bourrin = Monstre(2, "Bourrin")
+sorcier = Monstre(3, "sorcier")
+
+def monstre_du_combat():
+    liste_de_monstres = [sauvage, bourrin, sorcier]
+    generateur = randint(0,2)
+    monstre_du_combat =  liste_de_monstres[generateur]
+    return monstre_du_combat
+print (monstre_du_combat())
