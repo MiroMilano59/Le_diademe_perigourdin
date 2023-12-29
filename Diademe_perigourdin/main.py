@@ -52,8 +52,6 @@ while heros_choisi.pt_vies_heros > 0 :
     print(f"{monstre_du_combat.nom} est mort")
     break
 
-
-
    
 
             
@@ -65,4 +63,5 @@ while heros_choisi.pt_vies_heros > 0 :
     # try:
     # except ValueError:
     #     print("Erreur: vous devez rentrer un chiffre entre 1 et 3")
+
     
