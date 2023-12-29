@@ -23,4 +23,8 @@ while hero1.pt_vies_heros > 0 :
     #print(monstre1.__dict__)
     monstre1.utiliser_potion()
     #hero1.utiliser_potion()
-
+    def monstre_du_combat():
+        generateur = randint(0,2)
+        monstre_du_combat =  liste_de_monstres[generateur]
+print (monstre_du_combat())
+    
