@@ -1,4 +1,5 @@
 from random import *
+from Heros import *
 
 class Monstre:
     
@@ -22,3 +23,4 @@ class Monstre:
         print(f"il reste {self.pt_vies_monstre} vies au {self.nom}")
 
 
+monstre1 = Monstre(5)
